@@ -1,0 +1,498 @@
+// Layout Style
+//===============Navbar==========
+
+.navbar {
+  padding: 0;
+}
+
+.dropdown {
+  padding: 5px 10px;
+  border-left: 1px solid $charcoal;
+  border-right: 1px solid $charcoal;
+}
+
+.header-icon {
+  border-right: 1px solid $charcoal;
+  padding: 19px;
+  color: $nobel;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.header-icon1 {
+  color: $nobel;
+  border-right: 1px solid $charcoal;
+  padding: 21px;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.border-left-icon {
+  border-left: 1px solid $charcoal;
+}
+//=============Banner=============
+
+.left-arrow {
+  position: relative;
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-90deg);
+  font-size: 24px;
+}
+
+.right-arrow {
+  position: relative;
+  transform: rotate(-90deg);
+  font-size: 24px;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 36%;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.banner-prev {
+  position: absolute;
+  top: 67%;
+  bottom: 0;
+  left: 95.9%;
+  right: 1%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
+}
+
+.banner-next {
+  position: absolute;
+  top: 29.1%;
+  bottom: 0;
+  right: 2.8%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
+}
+
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 43.9%;
+  left: 0;
+  z-index: 15;
+  /* height: 50px; */
+  /* width: 50px; */
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  /* margin-right: 15%; */
+  margin-left: 94%;
+  list-style: none;
+}
+
+.carousel-indicators li {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 0.4px;
+  height: 0.4px;
+  margin: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: inherit;
+  background-clip: padding-box;
+  opacity: 0.6;
+  transition: opacity 0.6s ease;
+  padding: 3.3px;
+  border: 1px solid $white;
+
+  &:hover {
+    border: 2px solid $white;
+    background-color: $nobel;
+  }
+}
+
+.banner-title {
+  @include text-customize($white, 18px, bold, Hind-SemiBold, left);
+  position: absolute;
+  right: 98.5%;
+  bottom: 281%;
+  width: 150px;
+  letter-spacing: 4px;
+}
+
+.banner-text {
+  @include text-customize($white, 40px, bold, Hind-Bold, left);
+  text-transform: uppercase;
+  position: absolute;
+  right: 65%;
+  width: 500px;
+  height: 150px;
+  letter-spacing: 4px;
+  line-height: 1;
+  top: -184%;
+}
+
+.banner-info-text {
+  @include text-customize($white, 14px, bold, Hind-SemiBold, center);
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 114%;
+  left: 110.5%;
+  transform: rotate(-90deg);
+  z-index: 89;
+  height: 40px;
+  width: 150px;
+}
+//================Newsletter======================
+
+.newsletter__title {
+  @include text-customize($black, 20px, bold, Montserrat-Bold, left);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.newsletter {
+  padding-top: 315px;
+  background-color: $grey-light;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 22px;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-password {
+  @include text-customize($nobel, 15px, 300, Hind-Light, left);
+  text-transform: uppercase;
+  height: 50px;
+  margin-left: 40px;
+  padding: 2px 130px;
+}
+
+.form-email {
+  @include text-customize($nobel, 15px, 300, Hind-Light, left);
+  text-transform: uppercase;
+  padding: 2px 130px;
+  height: 50px;
+  margin-left: 35px;
+}
+
+.newsletter-button {
+  @include customize-button($bunker, 0px, none);
+  @include text-customize($whisper, 14px, bold, Hind-Medium, center);
+  @include box(280px, 50px);
+  margin-left: 20px;
+  letter-spacing: 2px;
+}
+//===============Main Content===================
+
+.post-area {
+  background-color: $ghost-white;
+  padding-top: 30px;
+}
+
+.main {
+  padding-right: 30px;
+  background-color: $ghost-white;
+}
+
+.pinterest-icon {
+  position: absolute;
+  top: 4px;
+  right: 35px;
+}
+
+.image-icon {
+  position: relative;
+  bottom: 20px;
+  left: 540px;
+}
+
+.pencil-icon {
+  position: relative;
+  bottom: 20px;
+  left: 540px;
+}
+
+.sub-article-title {
+  @include text-customize($nobel, 16px, bold, Hind-Regular, center);
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+
+.article-title {
+  @include text-customize($bunker, 28px, bold, Montserrat-Bold, center);
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+.article-text {
+  @include text-customize($bunker, 16px, 700, Hind-Light, center);
+  padding: 0 60px;
+  margin-top: 35px;
+}
+
+.article-icon {
+  color: $charcoal;
+}
+
+.article-info,
+.comments-info_text {
+  @include text-customize($nobel, 16px, 600, Hind-Regular, center);
+  text-transform: uppercase;
+  margin-right: 20px;
+  margin-top: 25px;
+}
+
+.article-button {
+  @include customize-button(inherit, 0px, none);
+  border-left: 1px solid $nobel;
+  border-right: 1px solid $nobel;
+  @include text-customize($bunker, 14px, 200, Hind-Medium, center);
+  @include box(125px, 30px);
+  text-transform: uppercase;
+  display: block;
+  position: relative;
+  margin: 45px auto 50px;
+}
+
+.social-icons__article {
+  margin: 0 15px;
+  font-size: 20px;
+  color: $bunker;
+}
+
+.adds-info {
+  padding: 32px 0;
+}
+
+.big-article {
+  margin-top: 80px;
+  background-color: $white;
+}
+//================Aside===================
+
+.aside {
+  margin-top: 28px;
+  padding: 0 30px;
+  background-color: $white;
+}
+
+.search-bar-form {
+  padding: 24px 28px;
+  margin-top: 40px;
+  margin-left: 15px;
+  background-color: $ghost-white;
+}
+
+.aside-button {
+  @include customize-button($bunker, 0px, none);
+  @include text-customize($whisper, 14px, bold, Hind-Medium, center);
+  margin-top: 40px;
+  padding: 14px 17px;
+}
+
+.promo1 {
+  margin-top: 41px;
+  margin-left: 22px;
+}
+
+.post-categories {
+  padding-top: 35px;
+  padding-left: 10px;
+}
+
+.promo2 {
+  margin-top: 32px;
+  margin-left: 20px;
+}
+
+.aside-title {
+  @include text-customize($bunker, 20px, 700, Montserrat-Bold, center);
+  text-transform: uppercase;
+}
+
+.aside-title1 {
+  @include text-customize($bunker, 20px, 700, Montserrat-Bold, center);
+  text-transform: uppercase;
+  margin-top: 17px;
+}
+
+.aside-list {
+  padding-bottom: 5px;
+  border-bottom: 1px solid $grey-light;
+}
+
+.aside-link {
+  @include text-customize($bunker, 16px, 700, Hind-Medium, center);
+  text-transform: uppercase;
+  padding-top: 12px;
+}
+
+.title-post {
+  @include text-customize($bunker, 16px, 700, Montserrat-Bold, left);
+  text-transform: uppercase;
+  padding-left: 20px;
+}
+
+.post-adds {
+  padding-left: 20px;
+}
+
+.post-adds__date,
+.post-adds__like-number,
+.post-adds__month,
+.post-adds__title {
+  @include text-customize($nobel, 14px, 600, Hind-Regular, center);
+  text-transform: uppercase;
+}
+
+.aside__social-icons {
+  padding: 40px 0;
+}
+
+.aside-prev {
+  padding: 30px;
+  height: 30px;
+  margin-top: 90px;
+  background-color: $charcoal;
+}
+
+.aside-next {
+  padding: 30px;
+  height: 30px;
+  margin-top: 90px;
+  background-color: $charcoal;
+}
+
+.facebook-group {
+  padding-top: 40px;
+  width: 100%;
+}
+//===============Blockquote=============
+
+.coma-icon {
+  position: relative;
+  bottom: 20px;
+  left: 540px;
+}
+
+.blockquote1 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: 100%;
+  background-color: $racing-green;
+}
+
+.title-blockquote1 {
+  @include text-customize($white, 20px, bold, Hind-Medium, center);
+  text-transform: uppercase;
+  padding-top: 90px;
+  padding-bottom: 60px;
+}
+
+.text-blockquote1 {
+  @include text-customize($nobel, 20px, bold, Hind-Medium, center);
+  text-transform: uppercase;
+  padding-top: 90px;
+  padding-bottom: 75px;
+}
+
+.blockquote2 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: 100%;
+  background-color: $black;
+}
+
+.title-blockquote2 {
+  @include text-customize($white, 20px, bold, Hind-Medium, center);
+  text-transform: uppercase;
+  padding-top: 90px;
+  padding-bottom: 30px;
+}
+
+.text-blockquote2 {
+  @include text-customize($white, 20px, bold, Hind-Medium, center);
+  text-transform: uppercase;
+  padding-bottom: 90px;
+}
+//==============Footer==================
+
+.top-footer__title {
+  @include text-customize($white, 16px, 600, Montserrat-Bold, left);
+  text-transform: uppercase;
+  margin-top: 62px;
+  margin-bottom: 35px;
+}
+
+.top-footer__text {
+  @include text-customize($white, 15px, 600, Hind-Light, left);
+}
+
+.bottom-footer__title1 {
+  @include text-customize($grey-suit, 14px, 200, Hind-Light, center);
+  text-transform: uppercase;
+
+  &:hover {
+    color: $grey-suit;
+  }
+  margin-top: 1px;
+  margin-left: 50px;
+}
+
+.bottom-footer__title2 {
+  @include text-customize($grey-suit, 14px, 200, Hind-Light, center);
+  text-transform: uppercase;
+  margin-top: 1px;
+
+  &:hover {
+    color: $grey-suit;
+  }
+}
+
+.bottom-footer__title3 {
+  @include text-customize($grey-suit, 14px, 200, Hind-Light, center);
+  text-transform: uppercase;
+  margin-top: 1px;
+
+  &:hover {
+    color: $grey-suit;
+  }
+}

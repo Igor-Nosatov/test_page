@@ -1,0 +1,19 @@
+// Mixins
+@mixin customize-button($bg,$radius, $border) {
+   background-color: $bg;
+   border-radius: $radius;
+   border:$border;
+  }
+
+  @mixin text-customize($color, $font-size, $weight, $font-family, $align){
+    color:$color;
+    font-size: $font-size;
+    font-weight: $weight;
+    font-family: $font-family;
+    text-align: $align;
+  }
+
+  @mixin box($width, $height) {
+    width: $width;
+    height: $height;
+  }

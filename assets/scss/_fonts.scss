@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Hind-Bold";
+  src: url("../fonts/Hind-Bold.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Hind-Light";
+  src: url("../fonts/Hind-Light.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Hind-Medium";
+  src: url("../fonts/Hind-Medium.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Hind-Regular";
+  src: url("../fonts/Hind-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Hind-SemiBold";
+  src: url("../fonts/Hind-SemiBold.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/Montserrat-Bold.ttf") format("ttf");
+}
+
+@import "font-element/variables";
+@import "font-element/mixins";
+@import "font-element/core";
+@import "font-element/larger";
+@import "font-element/fixed-width";
+@import "font-element/list";
+@import "font-element/bordered-pulled";
+@import "font-element/animated";
+@import "font-element/rotated-flipped";
+@import "font-element/stacked";
+@import "font-element/icons";
+@import "font-element/screen-reader";
+@import "font-element/animated";
+@import "font-element/brands";
+@import "font-element/screen-reader";
+@import "font-element/solid";
+@import "font-element/regular";

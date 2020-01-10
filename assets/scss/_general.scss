@@ -1,0 +1,39 @@
+// General Style
+.header,
+.wrapper,
+.top-footer,
+.bottom-footer
+{
+  padding: 0 55px;
+  width:1638px;
+}
+.header{
+  background-color: $bunker;
+  height: 345px;
+}
+.wrapper{
+  background-color:$ghost-white;
+}
+.top-footer{
+  background-color: $bunker;
+  height: 375px;
+}
+.bottom-footer{
+  background-color: $black-pearl;
+  height: 40px;
+}
+.navbar-dark{
+  background-color: $bunker;
+  height:55px;
+}
+.banner{
+  z-index: 14;
+  position: relative;
+  height:580px;
+}
+.form-row{
+  display: flex;
+    flex-wrap: wrap;
+    margin-right: 0px !important;
+    margin-left: 0px!important;
+}

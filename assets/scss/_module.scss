@@ -1,0 +1,86 @@
+.nav-toggle-icon {
+  width: 20px;
+  height: 3px;
+  background-color: $white;
+  margin: 2px 0;
+}
+
+.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: none !important;
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+
+.dropdown-menu {
+  background-color: inherit;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+  list-style: none;
+  background-color: inherit;
+  background-clip: padding-box;
+  border: none;
+  border-radius: 0;
+}
+
+.dropdown-item {
+  @include text-customize($white, 18px, 300, Hind-Bold, center);
+}
+
+.brand__logo-symbol {
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  /* Safari prior 9.0 */
+  transform: rotate(90deg);
+  /* Standard syntax */
+}
+
+.logo-title {
+  @include text-customize($white, 22px, 600, Hind-SemiBold, center);
+  margin-left: 301px;
+  margin-top: 8px;
+  letter-spacing: 4px;
+}
+
+.block {
+  display: inline-block;
+  margin: 0 3px;
+}
+
+.logo-symbol {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-icon {
+  color: $nobel;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.aside-icon {
+  color: $charcoal;
+  font-size: 18px;
+}
+/*=========Footer image============*/
+.instagram-photo__image {
+  margin: 2px;
+}
