@@ -423,13 +423,13 @@
 .title-blockquote1 {
   @include text-customize($white, 20px, bold, Hind-Medium, center);
   text-transform: uppercase;
-  padding-top: 90px;
   padding-bottom: 60px;
 }
 
 .text-blockquote1 {
   @include text-customize($nobel, 20px, bold, Hind-Medium, center);
   text-transform: uppercase;
+    padding-top: 90px;
   padding-bottom: 75px;
 }
 
